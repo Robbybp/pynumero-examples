@@ -21,6 +21,7 @@ def get_reduced_hessian(nlp, dof_vars, lbmult, ubmult):
     ineqcons = nlp.get_pyomo_inequality_constraints()
     ineq_jac = nlp.extract_submatrix_jacobian(varorder, ineqcons)
     ineq_val = np.diag(nlp.evaluate_ineq_constraints())
+    # NOTE: This uses a dense matrix. TODO: Use sparse.
     ineq_val_inv = np.diag(1 / nlp.evaluate_ineq_constraints())
     ineq_duals = np.diag(nlp.get_duals_ineq())
     # This term is in the right order
