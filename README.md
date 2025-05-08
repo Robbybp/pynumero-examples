@@ -31,5 +31,21 @@ To build the PyNumero-ASL library after installing Pyomo, run:
 pyomo build-extensions
 ```
 
+## Citation
+If you use PyNumero, please cite our paper!
+```bibtex
+@article{pynumero,
+    author = {Rodriguez, Jose S. and Parker, Robert B. and Laird, Carl D. and Nicholson, Bethany L. and Siirola, John D. and Bynum, Michael L.},
+    title = {Scalable Parallel Nonlinear Optimization with {PyNumero} and {Parapint}},
+    journal = {INFORMS Journal on Computing},
+    volume = {35},
+    number = {2},
+    pages = {509-517},
+    year = {2023},
+    doi = {10.1287/ijoc.2023.1272},
+    eprint = {https://doi.org/10.1287/ijoc.2023.1272},
+}
+```
+
 ## LICENSE
 This code is distributed under a BSD-3 license. See LICENSE.md.
