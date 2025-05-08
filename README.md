@@ -13,8 +13,9 @@ Hopefully they are useful for you as well.
 
 ## Dependencies
 These examples depend on [Pyomo](https://github.com/pyomo/pyomo),
+the PyNumero-ASL library,
 [IDAES](https://github.com/IDAES/idaes-pse), NumPy, SciPy, Matplotlib,
-CyIpopt,
+[CyIpopt](https://github.com/mechmotum/CyIpopt),
 [Egret](https://github.com/grid-parity-exchange/Egret),
 and this one random [repository](https://github.com/robbybp/surrogate-vs-implicit)
 that I used for a paper at one point.
@@ -24,7 +25,11 @@ You can probably install it with:
 pip install -r requirements.txt
 ```
 The core functionality (that you need to apply this to your own models)
-depends on Pyomo, NumPy, SciPy, and CyIpopt.
+depends on Pyomo, PyNumero-ASL, NumPy, SciPy, and CyIpopt.
+To build the PyNumero-ASL library after installing Pyomo, run:
+```
+pyomo build-extensions
+```
 
 ## LICENSE
 This code is distributed under a BSD-3 license. See LICENSE.md.
